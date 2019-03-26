@@ -1,7 +1,7 @@
 # Plumber
 
 Provides the `@pipe` macro which
-makes the using the `|>` syntax a little nicer. Instead of writting an
+makes using the `|>` syntax a little nicer. Instead of writting an
 anonymous function like so
 
 
@@ -33,7 +33,7 @@ x |> f |> whale->begin
         end
 ```    
 
-Should work even for weird expression.
+Should work even for weird expressions.
 
 ```julia
 x = 10

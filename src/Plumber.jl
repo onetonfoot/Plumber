@@ -3,8 +3,7 @@ module Plumber
 export @pipe
 
 using MLStyle
-using Random
-using MacroTools: prewalk, postwalk
+using MacroTools: prewalk, postwalk, alias_gensyms
 using Base.Iterators: flatten
 
 function has_underscores(expr)
@@ -18,8 +17,7 @@ end
 
 function remove_underscores!(expr)
     if has_underscores(expr)
-        #creates an function of a random name
-        f = Symbol(randstring())
+        local f = gensym()
         expr = postwalk(x -> x == :_ ? f : x , expr)
         :($f -> $expr)
     else

@@ -1,5 +1,6 @@
 # Plumber
 
+
 Provides the `@pipe` macro which
 makes using the `|>` syntax a little nicer. Instead of writting an
 anonymous function like so
@@ -39,3 +40,11 @@ Should work even for weird expressions.
 x = 10
 Pipe.@pipe(x |> [_,_] |> [_...,_...] ) == [10,10,10,10]
 ```
+
+
+To install run 
+
+```julia
+]add https://github.com/onetonfoot/Plumber.jl.git
+```
+

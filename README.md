@@ -1,9 +1,8 @@
 # Plumber
 
 
-Provides the `@pipe` macro which
-makes using the `|>` syntax a little nicer. Instead of writting an
-anonymous function like so
+Provides the `@pipe` macro which makes using the `|>` syntax a little nicer.
+Instead of writing an anonymous function like so:
 
 
 ```julia
@@ -15,8 +14,7 @@ x |> f |> x -> g(x,x)
 
 ```
 
-You can and reference the output
-with a underscore
+You can reference the output with a underscore:
 
 ```julia
 x = 10
@@ -26,7 +24,7 @@ g(x,y) = x + y
 @pipe x |> f |> g(_,_)  
 ```
 
-Any code that uses underscores will be transformed, adding an anonymous function
+Any code that uses underscores will be transformed, adding an anonymous function:
 
 ```julia
 x |> f |> whale->begin
@@ -42,7 +40,7 @@ Pipe.@pipe(x |> [_,_] |> [_...,_...] ) == [10,10,10,10]
 ```
 
 
-To install run 
+To install run:
 
 ```julia
 ]add https://github.com/onetonfoot/Plumber.jl.git

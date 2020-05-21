@@ -1,7 +1,7 @@
 name = "Plumber"
 uuid = "49a8456a-4ba5-11e9-3740-3f4f22e0c893"
 authors = ["onetonfoot <onetonfoot@gmail.com>"]
-version = "0.1.1"
+version = "0.0.1"
 
 [deps]
 ExprManipulation = "49bccec5-5f8e-4a37-813c-bb803a7e462a"

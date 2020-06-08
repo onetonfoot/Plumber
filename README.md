@@ -14,7 +14,7 @@ x |> f |> x -> g(x,x)
 
 ```
 
-You can reference the output with a underscore:
+You can reference the output with an underscore:
 
 ```julia
 x = 10
@@ -32,7 +32,7 @@ x |> f |> whale->begin
         end
 ```    
 
-Should work even for weird expressions.
+Should work even for weird expressions:
 
 ```julia
 x = 10

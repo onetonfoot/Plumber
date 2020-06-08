@@ -43,6 +43,6 @@ Pipe.@pipe(x |> [_,_] |> [_...,_...] ) == [10,10,10,10]
 To install run:
 
 ```julia
-]add https://github.com/onetonfoot/Plumber.jl.git
+] add Plumber
 ```
 

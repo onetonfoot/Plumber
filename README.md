@@ -36,7 +36,7 @@ Should work even for weird expressions:
 
 ```julia
 x = 10
-Pipe.@pipe(x |> [_,_] |> [_...,_...] ) == [10,10,10,10]
+@pipe(x |> [_,_] |> [_...,_...] ) == [10,10,10,10]
 ```
 
 
